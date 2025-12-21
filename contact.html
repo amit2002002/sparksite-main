@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SparkSite</title>
+    <meta name="description" content="Get in touch with SparkSite to discuss your website needs and get a free consultation">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/sparksite-logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Contact Header -->
+    <section class="bg-gradient-to-r from-green-500 to-green-700 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Let's Build Your Website</h1>
+            <p class="text-xl max-w-3xl">Ready to take your business online? Contact us today for a free consultation.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8">Send Us a Message</h2>
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="websiteType" class="block text-sm font-medium text-gray-700 mb-1">Website Type</label>
+                        <select id="websiteType" name="websiteType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            <option value="">Select a website type</option>
+                            <option value="business">Business Website</option>
+                            <option value="restaurant">Restaurant Website</option>
+                            <option value="clinic">Clinic/Dental Website</option>
+                            <option value="beauty-parlor">Beauty Parlor Website</option>
+                            <option value="hair-salon">Hair Salon Website</option>
+                            <option value="wedding">Wedding Website</option>
+                            <option value="danceclass">Dance Class Website</option>
+                            <option value="education">Education/School Website</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300 w-full">Send Message</button>
+                </form>
+                <div id="formSuccess" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
+                    <p>Thank you for your message! We'll get back to you soon.</p>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="phone" class="w-6 h-6 text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-1">Phone</h3>
+                            <p class="text-gray-600">8294947402</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="clock" class="w-6 h-6 text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-1">Business Hours</h3>
+                            <p class="text-gray-600">Monday - Friday: 9am - 6pm</p>
+                            <p class="text-gray-600">Saturday: 10am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

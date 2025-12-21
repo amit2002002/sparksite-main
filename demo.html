@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demos | SparkSite</title>
+    <meta name="description" content="View demo websites for different business types to see how SparkSite can help your business">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/sparksite-logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Demo Header -->
+    <section class="bg-gradient-to-r from-green-500 to-green-700 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Website Demos</h1>
+            <p class="text-xl max-w-3xl">Explore our portfolio of professionally designed websites for different types of businesses.</p>
+        </div>
+    </section>
+
+    <!-- Demo Categories -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap gap-4 mb-12">
+                <button class="category-btn active bg-green-500 text-white px-4 py-2 rounded-full" data-category="all">All</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="business">Business</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="restaurant">Restaurant</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="medical">Medical</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="beauty-parlor">Beauty Parlor</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="hair-salon">Hair Salon</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="wedding">Wedding</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="danceclass">Dance Class</button>
+                <button class="category-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-category="education">Education</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="demo-grid">
+                <!-- Business Demo 1 -->
+                <div class="demo-item business" data-category="business">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://themewagon.com/wp-content/uploads/2020/09/buson-1.jpg" alt="Business Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Modern Business</h3>
+                            <p class="text-gray-600 mb-4">Clean, professional design for service-based businesses.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Business</span>
+                                <a href="https://amit2002002.github.io/business-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Demo 1 -->
+                <div class="demo-item restaurant" data-category="restaurant">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://i.ytimg.com/vi/VVmYOZeiMBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDExt1P6VWtTJrKLhTsuSsA2JAfPw" alt="Restaurant Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Restaurant Elegance</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a restaurant to showcase its menu and services.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Restaurant</span>
+                                <a href="https://amit2002002.github.io/restaurant-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Demo 1 -->
+                <div class="demo-item medical" data-category="medical">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://htmlcodex.com/wp-content/uploads/2022/02/clinic-website-template.jpg" alt="Clinic Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">HealthPlus Clinic</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a clinic to showcase its services and patient reviews.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Medical</span>
+                                <a href="https://amit2002002.github.io/Dental-clinic/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty Parlor Demo -->
+                <div class="demo-item beauty-parlor" data-category="beauty-parlor">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/diva-free-template.jpg" alt="Beauty Parlor Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Glamour Studio</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a beauty parlor to showcase its services and portfolio.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Beauty Parlor</span>
+                                <a href="contact.html" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hair Salon Demo -->
+                <div class="demo-item hair-salon" data-category="hair-salon">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://www.radiustheme.com/wp-content/uploads/2021/09/BarberShop-Hair-Salon.png" alt="Hair Salon Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Stylist Edge</h3>
+                            <p class="text-gray-600 mb-4">Showcase stylists, services, and booking for hair salons.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Hair Salon</span>
+                                <a href="contact.html" class="text-green-500 font-semibold hover:underline">Request Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wedding Demo 1 -->
+                <div class="demo-item wedding" data-category="wedding">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://themewagon.com/wp-content/uploads/2020/12/wed.jpg" alt="Wedding Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Wedding Elegance</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a wedding to showcase its details and RSVP.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Wedding</span>
+                                <a href="https://amit2002002.github.io/wedding-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Demo 1 -->
+                <div class="demo-item education" data-category="education">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://muffingroup.com/blog/wp-content/uploads/2021/08/beschoo.jpg" alt="School Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Bright Minds Academy</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a school to showcase its courses and student reviews.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Education</span>
+                                <a href="https://amit2002002.github.io/kidSchool-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dance Class Demo -->
+                <div class="demo-item danceclass" data-category="danceclass">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://items.templately.com/item-a1abdbc8734eb9617298a21c4912a14b/dance-studio-header-banner-kU2Ol47.jpg" alt="Dance Class Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Dance class Academy</h3>
+                            <p class="text-gray-600 mb-4">A modern design for a dance class to showcase its schedule, instructors, and online registration.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Dance Class</span>
+                                <a href="https://amit2002002.github.io/danceclass-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business Demo 2 -->
+                <div class="demo-item business" data-category="business">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                        <img src="https://uicookies.com/wp-content/uploads/2020/03/Inds.jpg" alt="Business Website Demo" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Industrial Business</h3>
+                            <p class="text-gray-600 mb-4">A modern design for an industrial business to showcase its products and services.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Business</span>
+                                <a href="https://amit2002002.github.io/industrial-website/" target="_blank" class="text-green-500 font-semibold hover:underline">Live Demo →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to See Your Business Online?</h2>
+            <p class="text-xl mb-8">We'll create a custom website that perfectly represents your brand and attracts more customers.</p>
+            <a href="contact.html" class="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300 inline-block">Get Started Today</a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
