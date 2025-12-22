@@ -65,9 +65,9 @@ function initDemoFilter() {
 // Contact Form Validation
 function initContactForm() {
     const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('formSuccess');
+    const toast = document.getElementById('toast');
     
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Simple validation
@@ -75,10 +75,10 @@ function initContactForm() {
         const name = document.getElementById('name');
         const websiteType = document.getElementById('websiteType');
         const email = document.getElementById('email');
-        const message = document.getElementById('message');
+        const submitBtn = form.querySelector('button[type="submit"]');
         
         // Reset errors
-        [name, websiteType, email, message].forEach(field => {
+        [name, websiteType, email].forEach(field => {
             field.classList.remove('error');
             const errorMsg = field.nextElementSibling;
             if (errorMsg && errorMsg.classList.contains('error-message')) {
@@ -104,18 +104,47 @@ function initContactForm() {
             email.classList.add('error');
             isValid = false;
         }
+        if (!isValid) return;
         
-        // Validate message
-        if (message.value.trim() === '') {
-            message.classList.add('error');
-            isValid = false;
-        }
+        const formData = new FormData(form);
+        formData.set('subject', 'New Contact from SparkSite');
+        const phone = document.getElementById('phone')?.value || '';
+        const composedMessage = `Name: ${name.value}\nEmail: ${email.value}\nPhone: ${phone}\nWebsite Type: ${websiteType.value}`;
+        formData.set('message', composedMessage);
         
-        if (isValid) {
-            // In a real app, you would send the form data to a server here
-            form.reset();
-            form.style.display = 'none';
-            successMessage.classList.remove('hidden');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            if (response.ok) {
+                form.reset();
+                if (toast) {
+                    toast.textContent = 'Success! Your message has been sent.';
+                    toast.classList.remove('hidden');
+                    setTimeout(() => toast.classList.add('hidden'), 3000);
+                }
+            } else {
+                if (toast) {
+                    toast.textContent = `Error: ${data.message || 'Please try again.'}`;
+                    toast.classList.remove('hidden');
+                    setTimeout(() => toast.classList.add('hidden'), 3000);
+                }
+            }
+        } catch (err) {
+            if (toast) {
+                toast.textContent = 'Something went wrong. Please try again.';
+                toast.classList.remove('hidden');
+                setTimeout(() => toast.classList.add('hidden'), 3000);
+            }
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
         }
     });
 }
