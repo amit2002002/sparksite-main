@@ -99,20 +99,29 @@ class CustomFooter extends HTMLElement {
               <ul class="list">
                 <li class="item"><a href="index.html" class="link">Home</a></li>
                 <li class="item"><a href="services.html" class="link">Services</a></li>
-                <li class="item"><a href="demo.html" class="link">Demos</a></li>
+                <li class="item"><a href="demo.html" class="link">Live Demo Website</a></li>
                 <li class="item"><a href="contact.html" class="link">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 class="section-title">Services</h4>
               <ul class="list">
-                <li class="item"><a href="services.html" class="link">Business Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Restaurant Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Clinic Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Beauty Parlor Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Hair Salon Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Wedding Websites</a></li>
-                <li class="item"><a href="services.html" class="link">Dance Class Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/business-website/" target="_blank" class="link">Business Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/restaurant-website/" target="_blank" class="link">Restaurant Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/Dental-clinic/"  target="_blank" class="link">Clinic Websites</a></li>
+                <li class="item"><a href="services.html" target="_blank" class="link">Beauty Parlor Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/salon-website/" target="_blank" class="link">Hair Salon Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/wedding-website/" target="_blank" class="link">Wedding Websites</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/danceclass-website/" target="_blank" class="link">Dance Class Websites</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="section-title">Demo Websites</h4>
+              <ul class="list">
+                <li class="item"><a href="https://amit2002002.github.io/business-website/" target="_blank" class="link">Modern Business</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/restaurant-website/" target="_blank" class="link">Restaurant Demo</a></li>
+                <li class="item"><a href="https://amit2002002.github.io/Dental-clinic/" target="_blank" class="link">Healthcare Clinic</a></li>
+                <li class="item"><a href="demo.html" class="link">View All Demos</a></li>
               </ul>
             </div>
             <div>
